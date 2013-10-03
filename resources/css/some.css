@@ -33,9 +33,13 @@
   height: 0px;
   width: 0px;
   font-weight: bolder;
-  padding-top: 20px;
-  
+  padding: 20px;
   margin: auto;
+  
+  border:1px solid #FFFFFF;
+  background: rgba(255,255,255,0.5); /* white color with 50% transparency */
+  box-shadow: 3px 3px 3px #0A0A0A;
+ 
 }
 
 #menu {
