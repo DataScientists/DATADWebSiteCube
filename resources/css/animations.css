@@ -1,0 +1,25 @@
+@keyframes spinin {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px) translateZ(-10000px) rotateX(-15deg) rotateY(1440deg);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(1000px) translateZ(-10000px) rotateX(-12deg) rotateY(1080deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(750px) translateZ(-7500px) rotateX(-7deg) rotateY(720deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0px);
+	
+  }
+}
+.spinin {
+  animation-name: spinin;
+  animation-duration: 3.5s;
+  animation-iteration: 1;
+  animation-timing-function: linear;
+}

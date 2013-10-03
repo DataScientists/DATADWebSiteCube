@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #204C7B;
+}
+
+#viewport {
+  position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  perspective: 1000px;
+}
+
+#table {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+#cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  transform-style: preserve-3d;
+}
+
+#stand {
+  transform-style: preserve-3d;
+}
+
+#tilt {
+  transform-style: preserve-3d;
+}
+
+#shell {
+  transform-style: preserve-3d;
+}
+
+#cube {
+  margin: 0 auto;
+  max-width: 640px;
+  max-height: 640px;
+  position:relative;
+  text-align:center;
+  transform-style: preserve-3d;
+}
+
+#aspect {
+  height: auto;
+  width: 100%;
+}
+
+.side {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  text-align: left;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  background-color: #3E7FBF;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.begin {
+  opacity: 0;
+}
+
+.nav_plate {
+  position: absolute;
+  
+}
+
+.nav_plate:hover {
+  cursor: pointer;
+}
+
+.tooltip {
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+
+.nav_active .tooltip {
+  display: block;
+}
+
+.nav_plate {
+  overflow: clip;
+}
+
+.nav_plate:hover .tooltip {
+  opacity: 1;
+  z-index: 2;
+}
+
+#tilt {
+  transition: all 0.5s ease-in-out;
+}
+
+.outer_menu {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.inner_menu {
+  display: table-cell;
+}

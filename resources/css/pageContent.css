@@ -1,0 +1,33 @@
+body {
+
+}
+
+
+<div class="pageTextRegion">
+    	DATAD is a simple, easy to learn process that uncovers the power within your data so that you can continue on the shortest path to success.
+    </div>
+	 <div class="pageTextRegion">
+    	It is where scientific data analysis meets business gap analysis.
+    </div>
+    
+
+<!-- # Tom updates -->
+<style>
+	.pageTextRegion
+	{
+		background: white;
+  		font-family: sans-serif;
+  		color: black;
+  		font-size: 1em;
+  		font-weight: normal;
+  		position: relative;
+  		border-radius: 5px;
+  		text-align: left;
+  		overflow: hidden;
+
+  		display: table;
+  		box-shadow: 2px 2px 2px #888888;
+		background-image: url(resources/img/SectionBG.gif); background-repeat: repeat-x; border: 1px solid silver;
+		width: 540px;
+	}
+</style>

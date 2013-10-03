@@ -1,0 +1,157 @@
+.nav {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  position: absolute;
+  height: 30px;
+  width: 240px;
+  color: #C0C0C0;
+  background-image: url(../img/EdgeLinkButLeft.gif), url(../img/EdgeLinkButright.gif), url(../img/EdgeLinkButBody.gif);
+  background-position: left top, right top, 8px top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.nav span {
+  display: block;
+
+}
+
+#header {
+  font-family: sans-serif;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+  overflow: hidden;
+  height: 0px;
+  width: 0px;
+  font-weight: bolder;
+  padding-top: 20px;
+  
+  margin: auto;
+}
+
+#menu {
+  font-family: sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  display: none;
+  overflow: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+#menu a {
+  width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#menu a:visited {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#menu a:hover {
+  text-decoration: underline;
+  background: #FFCC00;
+}
+
+.highlight {
+  color: black !important;
+  background: #00CCFF;
+}
+
+.tooltip {
+  background: white;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide {
+	/*margin: 0px;
+	padding: 10px;
+	width: 520px;
+	
+	width: 400px;*/
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+.slideContent {
+	/*margin: 0px;
+	padding: 10px;
+	width: 520px;
+	background: black;
+	*/
+	height: 565px;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+
+.slideContent h1 {
+  width: 540px;
+  text-align: left;
+  margin: auto;
+  color: #DDF3FE;
+  padding: 10px;
+}
+/*
+#slide_1 {
+  background: url(../img/GlassBGTech.jpg) no-repeat; 
+}
+
+#slide_2 {
+  color: white;
+  background: black;
+}
+
+#slide_3 {
+	background: white;
+  background: url(../resources/img/GlassBGTech.jpg) no-repeat center center, white;
+}
+
+#slide_4 {
+  background: white;
+  background: url(../resources/img/GlassBGTech.jpg) no-repeat center center, white;
+}
+
+#slide_5 {
+  background: white;
+  background: url(../resources/img/GlassBGTech.jpg) no-repeat center center, white;
+}
+
+#slide_6 {
+  background: white;
+  background: url(../resources/img/GlassBGTech.jpg) no-repeat center center, white;
+}
+*/

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DATAD</title>
+  <meta charset='utf-8'> 
+
+  <script type="application/javascript" src="resources/js/prefixfree.min.js"></script>
+  <script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="application/javascript" src="resources/js/prefixfree.jquery.js"></script>
+  <script type="application/javascript" src="resources/js/cube.js"></script>
+  <script type="application/javascript" src="resources/js/star.js"></script>
+  <script type="application/javascript" src="resources/js/matrix.js"></script>
+  <script type="application/javascript" src="resources/js/some.js"></script>
+
+  <link rel="stylesheet" href="resources/css/base.css"/>
+  <link rel="stylesheet" href="resources/css/animations.css"/>
+  <link rel="stylesheet" href="resources/css/some.css"/>
+  <link rel="stylesheet" href="resources/css/somemore.css"/>
+  <style id="playing">
+  </style>
+</head>
+<body><div id="viewport">
+
+<div id="table"><div id="cell"><div id="stand"><div id="tilt"><div id="shell"><div id="cube" class="spinin begin">
+  <img id="aspect" src="data:image/gif;base64,R0lGODdhAQABAIAAAP///////ywAAAAAAQABAAACAkQBADs="/>
+
+  <div id="side_1" class="side">
+    <div id="slide_1" class="slide">
+    	<br><br>
+    	<div class="slideContent" >
+			<div style="background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px; ">
+				<h1 class="h1" >For Health Entrepreneurs</h1>
+			</div>
+			<br><br>
+			<div class="preload" style="display: none;">
+			  <img src="resources/img/DatadSlide1.jpg"/>
+			  <img src="resources/img/DatadSlide2.jpg"/>
+			  <img src="resources/img/DatadSlide3.jpg"/>
+			  <img src="resources/img/DatadSlide4.jpg"/>
+			</div>
+			<center>
+				<div class="pageTextRegion">
+					<canvas id="field" width="540" height="350"/>
+				</div>
+			</center>
+    	</div>
+    </div>
+  </div>
+  <div id="side_2" class="side">
+    <div id="slide_2" class="slide">
+	<br><br>
+	<div class="slideContent">
+		<div style="background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px; ">
+			<h1 class="h1" >Our Inspiration</h1>
+		</div>
+		<br><br>   
+		<center>
+			<div class="pageTextRegion">
+				<canvas id="cnv" width="540" height="280"/>
+			</div>
+		</center>
+    </div>
+	</div>
+  </div>
+
+  <div id="side_3" class="side">
+    <div id="slide_3" class="slide">
+    	<br><br>
+    	<div class="slideContent">
+			<div style="background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px;">
+				<h1 class="h1" >Serving To Inspire</h1>
+			</div>			
+			<center>
+				<div class="pageTextRegion">
+					<span><a href="https://www.youtube.com/watch?v=GfX-dTKyUjY" target="_media"><img src="resources/img/AboutUsTroyBioSml.jpg" /></a></span>
+					<span class="textSpan">Troy Sadkowsky is founder of <a href="https://datascientists.net>" target="_new">DataScientist.Net</a> and is a data scientist that is passionate about solving important problems. </span>
+				</div>
+				
+				<div class="pageTextRegion">					
+					<span class="textSpan">Ray Welburn is an IT consultant providing contract software development and networking services. 
+					He has over 30 years experience in the chemical, pharmaceuticals and IT industries in the UK, Australia and New Zealand.</span>
+					<span><img src="resources/img/AboutUsRay.jpg" height="100"/></span>
+				</div>
+				
+				<div class="pageTextRegion">
+					<span><img src="resources/img/AboutUsshaneBio.jpg"  height="100"/></span>
+					<span class="textSpan">Shane Sadkowsky is an innovative Project Coordinator with specialized skills in Integral Life Practice. 
+					His passion is to help people bring their ideas into reality using a holistic approach to health, work and play.</span>
+				</div>
+				
+				<div class="pageTextRegion">					
+					<span class="textSpan">Tom Caffrey, is the multimedia innovater who fuses his experience with technology and his love of the arts. Always looking for the next challenge of creating the outstanding and new age designs</span>
+					<span><img src="resources/img/AboutUsTom.jpg"  height="100"/></span>
+				</div>
+			</center>    	
+     	</div>
+    </div>
+  </div>
+
+  <div id="side_4" class="side">
+    <div id="slide_4" class="slide">
+    	<br><br>
+    	<div class="slideContent">
+			<div style="background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px; ">
+				<h1 class="h1" >Recommendations</h1>
+			</div>	
+			<center>			
+			<div class="pageTextRegion">
+				<span><img src="resources/img/DominiqueGorse.jpg" width="90"/></span>
+				<span class="textSpanSmall">
+				I had the pleasure of working with Troy for six months in 2011. He successfully delivered a key customer project for QFAB. 
+				Troy is an authentic "Data Scientist". He engages the customer within the project, 
+				brings technical knowledge and provides leadership through implementation of efficient processes, 
+				genuine compassion, empowerment and strong commitment.
+				<br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dominique Gorse</strong> - Data Scientist
+				<br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>Queensland Facility for Advanced Bioinformatics
+				</span>
+			</div>
+			<div class="pageTextRegion">
+				<span><img src="resources/img/Stephen0Brien.jpg" /></span>
+				<span class="textSpanSmall">
+				I worked with Troy for several crucial years during the formation of the initial Typefi Publishing System. 
+				Troy is quite an extraordinary individual for several reasons: he brings an incredible knowledge of data science and systems 
+				design to the software development process; he is an exceptional systems architect, able to rapidly iterate and respond to 
+				development goals that, during early R&D have a habit of morphing far quicker than most engineers can cope; he augments his 
+				experience with a clear-sighted intuition that delivers a thorough understanding of the benefits and limits of the numerous 
+				solutions that can be applied to a particular problem set; and he can communicate all of the above with clarity, thoughtfulness 
+				and precision. Troy is also a superb team leader, has a laser-sharp focus, and is also a delight with which to work.
+				<br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stephen O'Brien</strong> - Program Manager
+				<br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>Typefi Systems Pty Ltd
+				</span>
+			</div>
+			</center>
+		</div>
+    </div>
+  </div>
+
+  <div id="side_5" class="side">
+    <div id="slide_5" class="slide">    
+		<br><br>
+    	<div class="slideContent">
+			<div style="background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px; ">
+				<h1 class="h1" >The DATAD Workshop</h1>
+			</div>
+			<br><br>
+			<center>
+			<div class="pageTextRegion">
+			<iframe width="540" height="360" src="//www.youtube.com/embed/DB9Ymnrlfe0?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			</center>
+			<!-- <iframe width="540" height="405" src="//www.youtube.com/embed/4-qKFdIq7Wg" frameborder="0" allowfullscreen></iframe>-->
+			<br>
+      	
+		
+		
+		</div>
+    </div>
+  </div>
+
+  <div id="side_6" class="side">
+    <div id="slide_6" class="slide">
+     
+      <br>
+    	<div class="slideContent">
+      <br> <!-- <h1 class="h1">Data Science</h1> -->
+     	<div style="background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px; width: 560px;">
+		<h1 class="h1" >Free Consulation</h1></div>
+      	<br><br>	
+		<center>		
+			<div class="pageTextRegion">
+				<span class="textSpan">We'd love to hear from you.</span>
+			</div>
+			<div class="pageTextRegion">
+				<span class="textSpan" style="width: 180px;">Name: </span>
+				<span class="textSpan"><input type="text" id="name" size="40"></span>
+			</div>
+			<div class="pageTextRegion"> 			
+				<span class="textSpan" style="width: 180px;">Organisation: </span>
+				<span class="textSpan"><input type="text" id="organisation" size="40"></span>
+			</div>
+			<div class="pageTextRegion">
+				<span class="textSpan" style="width: 180px;">Email: </span>
+				<span class="textSpan"><input type="text" id="email" size="40"></span>
+			</div>
+			<div class="pageTextRegion">
+				<span class="textSpan" style="width: 180px;">Your Vision: </span>
+				<span class="textSpan"><textarea cols="40" id="vision" rows="4"></textarea></span>
+			</div>
+			<div class="pageTextRegion">
+				<span class="textSpan" style="width: 180px;"> </span>
+				<span class="textSpan" style="width: 275px;"><input type="button" value="Send" onclick="saveContactDetails();" ></span>
+			</div>
+     	</center>
+     	</div>    
+    </div>
+  </div>
+
+</div></div></div></div></div></div>
+
+</div>
+<div id="nav_plates"></div>
+<div id="header">&nbsp;</div>
+<div id="menu">&nbsp;</div>
+</body>
+</html>
