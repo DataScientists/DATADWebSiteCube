@@ -111,4 +111,10 @@ function saveContactDetails(){
 	$("#email").val('');
 	$("#vision").val('');
 	$("#thanks").html('Thanks, message received.  We will be in contact.');
+	$("#thanks").css("height", 350); 
+	$("#namebox").hide();
+	$("#organisationbox").hide();
+	$("#emailbox").hide();
+	$("#visionbox").hide();
+	$("#sendbutton").hide();
 }
