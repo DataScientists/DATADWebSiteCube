@@ -7,13 +7,13 @@ var titles = [
   "The Team",
   "Recommendations",
   "The Product",
-  "Free Consulation",
+  "Free Consultation",
 ];
 
-var header_height = 0.60;
+var header_height = 0.405;
 var header_width = 0.65;
 
-var menu_height = 0.60;
+var menu_height = 0.405;
 var menu_width = 0.65;
 
 var tooltext = "&nbsp;Click to Rotate Cube.&nbsp;";

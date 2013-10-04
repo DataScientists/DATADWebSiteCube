@@ -21,7 +21,7 @@
 #header {
   font-family: sans-serif;
   color: white;
-  font-size: 2em;
+  font-size: 26px;
   font-weight: bold;
   position: absolute;
   border-radius: 10px;
@@ -33,7 +33,7 @@
   height: 0px;
   width: 0px;
   font-weight: bolder;
-  padding: 20px;
+  padding: 15px;
   margin: auto;
   
   border:1px solid #FFFFFF;
@@ -56,6 +56,11 @@
   overflow: hidden;
   height: 0px;
   width: 0px;
+  
+  padding: 0px;
+  border:1px solid #FFFFFF;
+  background: rgba(255,255,255,0.5); /* white color with 50% transparency */
+  box-shadow: 3px 3px 3px #0A0A0A;
 }
 
 #menu a {
@@ -63,7 +68,7 @@
   display: inline-block;
   color: white;
   text-decoration: none;
-  padding: 5px;
+  padding: 9px;
 }
 
 #menu a:visited {
