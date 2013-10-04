@@ -54,6 +54,28 @@ function stop_star() {
 //    
 
 var text = "";
+<<<<<<< .mine
+	text += "                                       "
+	text += "                                       "
+	text += "                                       "
+	text += "                                       "
+	text += "   The DATAD mission is to honour      "
+	text += "   the wealth of data that is here.    "
+	text += "                                       "
+	text += "                                       "
+	text += "    Our vision is to serve and         "
+	text += "    inspire the world's leading        "
+	text += "    health entrepreneurs by            "
+	text += "    measuring and maintaining the      "
+	text += "    value of their data assets         " 
+	text += "    and evovling data ecosystems.      " 
+	text += "                                       "
+	text += "                                       "
+	text += "                                       "
+	text += "                                       "
+	text += "                                       "
+	text += "                                       "
+=======
 text += "                                       "
 text += "                                       "
 text += "                                       "
@@ -77,6 +99,7 @@ text += "                                       "
 text += "                                       "
 text += "                                       "
 
+>>>>>>> .r11
 //last line is bleed
 
 var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-.   "
@@ -97,7 +120,7 @@ var actions = [
 ];
 
 function saveContactDetails(){
-    
+	rotate('u',function() {rotate('u',function() {rotate('u',function() {rotate('u')})})});
 	var data = new FormData();
 	var name = $("#name").val();
 	var organisation = $("#organisation").val();
@@ -107,5 +130,9 @@ function saveContactDetails(){
 	var xhr = (window.XMLHttpRequest) ? new XMLHttpRequest() : new activeXObject("Microsoft.XMLHTTP");
 	xhr.open( 'post', 'controller.php', true );
 	xhr.send(data);
-	alert('sent');
+	$("#name").val('');
+	$("#organisation").val('');
+	$("#email").val('');
+	$("#vision").val('');
+	$("#thanks").html('Thanks, message received.  We will be in contact.');
 }
