@@ -10,10 +10,10 @@ var titles = [
   "Free Consulation",
 ];
 
-var header_height = 1.0;
+var header_height = 0.60;
 var header_width = 0.65;
 
-var menu_height = 1.0;
+var menu_height = 0.60;
 var menu_width = 0.65;
 
 var tooltext = "&nbsp;Click to Rotate Cube.&nbsp;";

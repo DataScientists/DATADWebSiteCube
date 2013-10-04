@@ -1,4 +1,11 @@
-	.pageTextRegion
+.slideHeader
+{
+	background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px; 
+	padding-left: 30px;
+	
+}
+
+.pageTextRegion
 	{
 		/*background: white;
   		font-family: sans-serif;
