@@ -68,6 +68,14 @@ text += "    health entrepreneurs by            "
 text += "    measuring and maintaining the      "
 text += "    value of their data assets         " 
 text += "    and evovling data ecosystems.      " 
+text += "                                       "
+text += "                                       "
+text += "                                       "
+text += "                                       "
+text += "                                       "
+text += "                                       "
+text += "                                       "
+text += "                                       "
 
 //last line is bleed
 

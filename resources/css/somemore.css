@@ -1,10 +1,42 @@
 .slideHeader
 {
-	background: url(resources/img/headerBG560.gif) no-repeat center center; height: 67px; 
+	
+	background: url(../img/headerBG560.gif) no-repeat center center; height: 67px; 
 	padding-left: 30px;
 	
 }
 
+.pageTextRegionOLD
+	{
+		/*background: white;
+  		font-family: sans-serif;
+  		color: black;
+  		font-size: 1em;
+  		font-weight: normal;
+  		position: relative;
+  		border-radius: 5px;
+  		text-align: left;
+  		overflow: hidden;
+  		#204C7B
+  		* 
+  		* */
+  		-webkit-border-radius: 10px;
+  		-moz-border-radius: 10px;
+  		
+  		display: table;
+  		box-shadow: 2px 2px 2px #204C7B;
+		
+		border: 1px solid white;
+		border-radius: 10px;
+		width: 540px;
+		margin: auto;
+		background: url(../img/glass.png) no-repeat center top;;
+		background-color: #DEF4FF;
+		z-index: 3;
+		padding: 5px;
+        margin: 5px;
+	}
+	
 .pageTextRegion
 	{
 		/*background: white;
@@ -15,20 +47,48 @@
   		position: relative;
   		border-radius: 5px;
   		text-align: left;
-  		overflow: hidden;*/
+  		overflow: hidden;
+  		#204C7B
+  		* 
+  		*/
+  		/*-webkit-border-radius: 10px;
+  		-moz-border-radius: 10px;
+  		
   		display: table;
-  		box-shadow: 2px 2px 2px #888888;
-		background-repeat: repeat-x; 
-		border: 1px solid silver;
+  		box-shadow: 2px 2px 2px #204C7B;
+		
+		border: 1px solid white;
+		border-radius: 10px;
 		width: 540px;
 		margin: auto;
-		background: url(../img/glass.png);
+		background: url(../img/glass.png) no-repeat center top;;
 		background-color: #DEF4FF;
 		z-index: 3;
 		padding: 5px;
         margin: 5px;
+        */
+       position: static;
+       -webkit-border-radius: 10px;
+  		-moz-border-radius: 10px;
+       	
+       	border-radius: 10px;
+       	border:1px solid #FFFFFF;
+  		background: rgba(255,255,255,0.5); /* white color with 50% transparency */
+  		box-shadow: 3px 3px 3px #204C7B;
+  		padding: 6px;
+  		/*padding-left: 10px;
+  		padding-right: 10px;*/
+  		margin: 5px;
+  		width: 550px;
 	}
+	
+.pageTextRegionTable
+	{
+		display: table;
+	}		
+	
 .textSpan {
+	border-radius: 10px;
  font-family: sans-serif;
   vertical-align: middle;
   display: table-cell;
