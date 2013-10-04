@@ -95,6 +95,8 @@ var actions = [
   [null,null],
 ];
 
+//Thanks, message received.  We will be in contact.
+
 function saveContactDetails(){
 	rotate('u',function() {rotate('u',function() {rotate('u',function() {rotate('u')})})});
 	var data = new FormData();
@@ -110,7 +112,7 @@ function saveContactDetails(){
 	$("#organisation").val('');
 	$("#email").val('');
 	$("#vision").val('');
-	$("#thanks").html('Thanks, message received.  We will be in contact.');
+	$("#thanks").html('<center>Message received.  <br><br><strong>Thank you.</strong><br><br> We will be in contact.<center>');
 	$("#thanks").css("height", 350); 
 	$("#namebox").hide();
 	$("#organisationbox").hide();
