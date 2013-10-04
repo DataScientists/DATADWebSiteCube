@@ -54,7 +54,7 @@ function stop_star() {
 //    
 
 var text = "";
-<<<<<<< .mine
+
 	text += "                                       "
 	text += "                                       "
 	text += "                                       "
@@ -75,31 +75,7 @@ var text = "";
 	text += "                                       "
 	text += "                                       "
 	text += "                                       "
-=======
-text += "                                       "
-text += "                                       "
-text += "                                       "
-text += "                                       "
-text += "   The DATAD mission is to honour      "
-text += "   the wealth of data that is here.    "
-text += "                                       "
-text += "                                       "
-text += "    Our vision is to serve and         "
-text += "    inspire the world's leading        "
-text += "    health entrepreneurs by            "
-text += "    measuring and maintaining the      "
-text += "    value of their data assets         " 
-text += "    and evovling data ecosystems.      " 
-text += "                                       "
-text += "                                       "
-text += "                                       "
-text += "                                       "
-text += "                                       "
-text += "                                       "
-text += "                                       "
-text += "                                       "
 
->>>>>>> .r11
 //last line is bleed
 
 var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-.   "
