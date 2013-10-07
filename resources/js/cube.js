@@ -430,7 +430,7 @@ $(function() {
   }
 
   var current = identity;
-
+/*
   $(document).keydown(function(evt) {
     if (playing) return;
     switch(evt.keyCode) {
@@ -460,7 +460,7 @@ $(function() {
         break;
     }
   });
-
+*/
 
   function hover(activate) {
     if (activate) {
