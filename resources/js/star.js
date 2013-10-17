@@ -1,4 +1,5 @@
 var star = null;
+var pausing =false;
 $(function() {
   star = function(star) {
     var w = 620;
@@ -201,4 +202,61 @@ $(function() {
 
   }(function() {});
 });
+
+
+function nextPicture(){
+	  star.callback = function() {
+		    if (!star_on) return;
+		    star_timer = setTimeout(function() {
+		      if (!star_on) return;
+		      star.hole = star.pic;
+		      var img = new Image();
+		      star_idx += 1;
+		      img.src = pics[star_idx % pics.length];
+		      star.pic = img;
+		      star.apply();
+		    },5000);
+		  }
+	  star.hole = star.pic;
+	  star_idx += 1;
+	  var img = new Image();
+	  img.src = pics[star_idx % pics.length];
+	  star.pic = img;
+	  star.apply();
+}
+function prevPicture(){
+	  star.callback = function() {
+		    if (!star_on) return;
+		    star_timer = setTimeout(function() {
+		      if (!star_on) return;
+		      star.hole = star.pic;
+		      var img = new Image();
+		      star_idx += 1;
+		      img.src = pics[star_idx % pics.length];
+		      star.pic = img;
+		      star.apply();
+		    },5000);
+		  }
+	  star.hole = star.pic;
+	  star_idx -= 1;
+	  var img = new Image();
+	  img.src = pics[star_idx % pics.length];
+	  star.pic = img;
+	  star.apply();
+}
+function resetPauseButton()
+{
+	$("#btnPause").val("Pause");
+}
+function pausePicture(){
+	if(star_on){
+		stop_star();
+		$("#btnPause").val("Play");
+	}
+	else{
+		star_on=true;
+		nextPicture();
+		$("#btnPause").val("Pause");
+	}
+}
 

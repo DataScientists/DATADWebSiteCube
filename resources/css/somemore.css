@@ -73,8 +73,8 @@
         */
        	vertical-align: middle;
        	border-radius: 10px;
-       	border:1px solid #FFFFFF;
-  		background: rgba(255,255,255,0.5); /* white color with 50% transparency */
+       	border:1px solid #FFFFFF !important;
+  		background: rgba(255,255,255,0.5) !important; /* white color with 50% transparency */
   		box-shadow: 3px 3px 3px #204C7B;
   		padding: 6px;
   		/*padding-left: 10px;

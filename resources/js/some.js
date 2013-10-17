@@ -1,3 +1,17 @@
+	function isIE() {
+		var FF = !(window.mozInnerScreenX == null);
+		var myNav = navigator.userAgent.toLowerCase();
+		var ie= (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1])
+				: false;
+		return FF || ie;
+	}
+	$(document).ready(function() {
+		
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	
+	
+	
 var main_title = "";
 main_title += "";
 main_title += "The DATAD process is for building agile data-driven solutions that are designed for highly changeable environments.";
@@ -21,15 +35,16 @@ var menu_height = 0.405;
 var menu_width = 0.65;
 
 var tooltext = "&nbsp;Click to Rotate Cube.&nbsp;";
-
+var started =false;
 var star_on = false;
 var star_idx = 1;
+var pics = ["resources/img/DatadSlide1.jpg",
+            "resources/img/DatadSlide2.jpg",
+            "resources/img/DatadSlide3.jpg",
+            "resources/img/DatadSlide4.jpg",];
 function start_star() {
-  var pics = ["resources/img/DatadSlide1.jpg",
-              "resources/img/DatadSlide2.jpg",
-              "resources/img/DatadSlide3.jpg",
-              "resources/img/DatadSlide4.jpg",];
-
+	resetPauseButton();
+	started=true;
   star.callback = function() {
     if (!star_on) return;
     star_timer = setTimeout(function() {
@@ -102,7 +117,8 @@ var actions = [
 //Thanks, message received.  We will be in contact.
 
 function saveContactDetails(){
-	rotate('u',function() {rotate('u',function() {rotate('u',function() {rotate('u')})})});
+	if(!isIE())
+		rotate('u',function() {rotate('u',function() {rotate('u',function() {rotate('u')})})});
 	var data = new FormData();
 	var name = $("#name").val();
 	var organisation = $("#organisation").val();

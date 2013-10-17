@@ -4,7 +4,7 @@ var cube = null;
 var shell = null;
 var css_playing = null;
 var db = null;
-
+var revealCurrentPage= 0;
 var playing = false;
 
 var ui = false;
@@ -38,6 +38,16 @@ var down = [1,0,0,0,
           0,Math.cos(r),Math.sin(r),0,
           0,-Math.sin(r),Math.cos(r),0,
           0,0,0,1];
+function nextFirst(){
+	if(isIE()){
+		$('#to_5').click();
+		window.location.href="#/slide5";
+	}
+	else
+		{
+		rotate('u');
+		}
+}
 
 function mat_x_mat(a,b) {
   var c = new Array();
@@ -170,13 +180,32 @@ function fill_menu() {
     var link = $('#to_' + i);
     link.attr('class','');
     link.unbind('click');
-    if (i == dirs[1]) link.click(function() {rotate('r')});
-    if (i == dirs[2]) link.click(function() {rotate('u')});
-    if (i == dirs[3]) link.click(function() {rotate('u',function() {rotate('u')})});
-    if (i == dirs[4]) link.click(function() {rotate('l')});
-    if (i == dirs[5]) link.click(function() {rotate('d')});
+    if(!isIE()){
+	    if (i == dirs[1]) link.click(function() {rotate('r')});
+	    if (i == dirs[2]) link.click(function() {rotate('u')});
+	    if (i == dirs[3]) link.click(function() {rotate('u',function() {rotate('u')})});
+	    if (i == dirs[4]) link.click(function() {rotate('l')});
+	    if (i == dirs[5]) link.click(function() {rotate('d')});
+	    $('#to_' + dirs[0]).attr('class','highlight');
+    }
+    else
+	{
+    	link.attr('href','#/slide'+i);
+    	link.click(function(){
+    		$(".inner_menu a").attr('class',"");$(this).attr('class','highlight');
+    		state =i;
+    	})
+    	if(i==1)
+    		$(link).attr('class','highlight');
+	    /*if (i == 1) link.click(function() {Reveal.slide( 0 );});
+	    if (i == 2) link.click(function() {Reveal.slide( 1 );});
+	    if (i == 3) link.click(function() {Reveal.slide( 2 );});
+	    if (i ==4) link.click(function() {Reveal.slide( 3 );});
+	    if (i == 5) link.click(function() {Reveal.slide( 4 );});
+	    if (i == 6) link.click(function() {Reveal.slide( 5 );});*/
+	}
   }
-  $('#to_' + dirs[0]).attr('class','highlight');
+  
 }
 
 function rotate(dir,clbck) {
@@ -237,6 +266,8 @@ function nav(ths) {
 }
 
 $(function() {
+	
+
   //var cube = $('#cube');
   cube = $('#cube');
   shell = $('#shell');
@@ -250,7 +281,7 @@ $(function() {
   var resize_timer = null;
   var w;
   function resize() {
-    size = Math.round(side_1.width() / 2.0);
+    size = Math.round(640 / 2.0);
     w = win.width();
 
     var sides = [
@@ -261,12 +292,13 @@ $(function() {
       ['#side_5','rotateX(90deg)'],
       ['#side_6','rotateX(-90deg)'],
     ];
-
-    for (var i = 0; i < sides.length; i++) {
-      var side = sides[i];
-      var transform = side[1];
-      side = side[0];
-      $(side).css({'transform':transform + ' translateZ(' + size + 'px)'});
+    if(!isIE()){
+	    for (var i = 0; i < sides.length; i++) {
+	      var side = sides[i];
+	      var transform = side[1];
+	      side = side[0];
+	      $(side).css({'transform':transform + ' translateZ(' + size + 'px)'});
+	    }
     }
 
     $('#side_7').css({'transform':'translateZ(' + size + 'px)'});
