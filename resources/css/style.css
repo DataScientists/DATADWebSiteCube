@@ -1,0 +1,448 @@
+
+  /************************************************************************************************
+                                        Start Base CSS
+
+   ************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #204C7B;
+  font-family: 'OpenSansLight', arial, helvetica, sans-serif;
+  font-weight: normal;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #666666;
+  font-family: 'RobotoThin', 'OpenSansRegular', arial, helvetica, sans-serif;
+  font-weight: normal;
+}
+
+
+input[type="text"], textarea {
+  padding: 2px 5px;
+}
+
+#viewport {
+  position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  perspective: 1000px;
+}
+
+#table {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+#cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  transform-style: preserve-3d;
+}
+
+#stand {
+  transform-style: preserve-3d;
+}
+
+#tilt {
+  transform-style: preserve-3d;
+}
+
+#shell {
+  transform-style: preserve-3d;
+}
+
+#cube {
+  margin: 0 auto;
+  max-width: 640px;
+  max-height: 680px;
+  position:relative;
+  text-align:center;
+  transform-style: preserve-3d;
+}
+
+#aspect {
+  height: auto;
+  width: 100%;
+}
+
+.side {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  text-align: left;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  background-color: #006796;
+  border: 1px solid #008aaf;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.begin {
+  opacity: 0;
+}
+
+.nav_plate {
+  position: absolute;
+  
+}
+
+.nav_plate:hover {
+  cursor: pointer;
+}
+
+.tooltip {
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+
+.nav_active .tooltip {
+  display: block;
+}
+
+.nav_plate {
+  overflow: clip;
+}
+
+.nav_plate:hover .tooltip {
+  opacity: 1;
+  z-index: 2;
+}
+
+#tilt {
+  transition: all 0.5s ease-in-out;
+}
+
+.outer_menu {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.inner_menu {
+  display: table-cell;
+}
+
+
+
+
+
+  /************************************************************************************************
+                                          Start Animation CSS
+
+   ************************************************************************************************/
+
+
+
+   @keyframes spinin {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px) translateZ(-10000px) rotateX(-15deg) rotateY(1440deg);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(1000px) translateZ(-10000px) rotateX(-12deg) rotateY(1080deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(750px) translateZ(-7500px) rotateX(-7deg) rotateY(720deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0px);
+  
+  }
+}
+.spinin {
+  animation-name: spinin;
+  animation-duration: 3.5s;
+  animation-iteration: 1;
+  animation-timing-function: linear;
+}
+
+
+
+  /************************************************************************************************
+                                    End Animation css
+
+   ************************************************************************************************/
+
+
+
+
+
+.nav {
+  font-family: 'RobotoLight','OpenSansRegular', arial, helvetica, sans-serif;
+  font-size: 20px;
+  color: #00b5dc;
+  text-align: center;
+  position: absolute;
+  position: absolute;
+  height: 40px;
+  width: 240px;
+  background: url(../img/nav.png) no-repeat;
+  padding: 5px 0;
+}
+
+.nav span {
+  display: block;
+
+}
+
+#header {
+  font-family: 'OpenSansLight', arial, helvetica, sans-serif;
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+  overflow: hidden;
+  padding: 15px;
+  margin: auto;
+  border:2px solid #008aaf;
+  background: #006796;
+
+ 
+}
+
+#menu {
+  font-family: 'OpenSansLight', arial, helvetica, sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  display: none;
+  overflow: hidden;
+  padding: 0px;
+  background: #006796;
+  border: 2px solid #008aaf;
+  background: #006796;
+}
+
+#menu a {
+  font-family: 'OpenSansLight', arial, helvetica, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  display: inline-block;
+  color: white;
+  padding: 6px 0 10px 40px;
+  text-align: left;
+  text-decoration: none;
+}
+
+#menu a:visited {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#menu a:hover {
+  background: #0b4466;
+  color: #FFFFFF;
+}
+
+.highlight {
+  color: #ffffff;
+  background: #2489b0;
+}
+.highlight:hover {
+  color: #333;
+}
+.tooltip {
+  background: white;
+  font-family: 'OpenSansRegular', arial, helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide {
+	/*margin: 0px;
+	padding: 10px;
+	width: 520px;
+	
+	width: 400px;*/
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+.slideContent {
+	height: 565px;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+
+.slideContent h1 {
+  font-family: 'RobotoThin', 'OpenSansRegular', arial, helvetica, sans-serif;
+  width: 540px;
+  text-align: left;
+  margin: auto;
+  color: #DDF3FE;
+  padding: 15px 0;
+  text-align: center;
+}
+
+
+
+
+
+
+  /************************************************************************************************
+                        Some more css (Merge this in one css file)
+
+   ************************************************************************************************/
+
+
+
+.slideHeader {
+  background: url(../img/header-title.png) no-repeat center center;
+  height: 62px; 
+  padding-left: 30px;
+  margin: 0 0 8px10px 0;
+  
+}
+
+.pageTextRegionOLD {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 540px;
+    margin: auto;
+    background: url(../img/glass.png) no-repeat center top;;
+    background-color: #DEF4FF;
+    z-index: 3;
+    padding: 5px;
+    margin: 5px;
+    display: table;
+    box-shadow: 2px 2px 2px #204C7B;
+     -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      
+  }
+  
+.pageTextRegion {
+      vertical-align: middle;
+      border-radius: 10px;
+      border:1px solid #FFFFFF;
+      background: rgba(255,255,255,0.5); /* white color with 50% transparency */
+      box-shadow: 3px 3px 3px #204C7B;
+      padding: 6px;
+      margin: 5px;
+      width: 550px;
+
+  }
+  
+.pageTextRegionTable {
+    display: table;
+    vertical-align: middle;
+  }   
+  
+.textSpan {
+    border-radius: 10px;
+    font-family: 'OpenSansRegular', arial, helvetica, sans-serif;
+    vertical-align: top;
+    display: table-cell;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 24px;
+    padding: 0 20px 0 20px;
+}
+.textSpanSmall{
+  font-family: 'OpenSansRegular', arial, helvetica, sans-serif;
+  vertical-align: middle;
+  text-align:left;
+  display: table-cell;
+  padding: 0 8px;
+  margin: 5px;
+  font-size: 12px;
+  line-height: 20px;
+}
+#img {
+  vertical-align: middle;
+  display: table-cell;
+}
+.h1{
+    font-family: 'RobotoThin', 'OpenSansRegular', arial, helvetica, sans-serif;
+    font-size: 2em;
+    color: #333;
+}
+
+
+
+ /**********************************************************************************
+                                      Button
+ ***********************************************************************************/
+
+ input[type="button"] {
+  background: #0b4466;
+  padding: 5px 8px;
+  border: none;
+  margin: 0 2px;
+  color: #00b5dc;
+  font-family: 'OpenSansRegular', arial, helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  -webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+ }
+
+
+
+ input[type="button"]:hover {
+    cursor: pointer;
+    border: none;
+ }
+
+ .textSpan.send-button {
+  display: block;
+  margin: 0 0 0 30px;
+ }
+
+ input[type="image"] {
+  float: left;
+  display: block;
+  margin: 20px 0 0 216px;
+ }
