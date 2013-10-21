@@ -412,21 +412,21 @@ $(function() {
       slide.append(nav);
       switch(j) {
         case 0:
-          nav.css({'top':'0px','left':Math.round(320-nav.width()/2.0) + 'px'});
+          nav.css({'top':'-1px','left':Math.round(320-nav.width()/2.0) + 'px'});
           break;
         case 1:
-          nav.css({'right':Math.round((nav.height()/2.0)-nav.width()/2.0) + 'px','top':Math.round(320-(nav.height()/2.0)) + 'px'});
+          nav.css({'right':'-96px','top':Math.round(320-(nav.height()/2.0)) + 'px'});
           nav.css({'transform':'rotate(90deg)'});
           break;
         case 2:
-          nav.css({'bottom':'0px','left':Math.round(320-nav.width()/2.0) + 'px'});
+          nav.css({'bottom':'-20px','left':Math.round(320-nav.width()/2.0) + 'px'});
           break;
         case 3:
-          nav.css({'left':Math.round((nav.height()/2.0)-nav.width()/2.0) + 'px','top':Math.round(320-(nav.height()/2.0)) + 'px'});
+          nav.css({'left':'-96px','top':Math.round(320-(nav.height()/2.0)) + 'px'});
           nav.css({'transform':'rotate(-90deg)'});
           break;
       }
-      nav.css({'background-size':'10px 30px, 10px 30px, ' + Math.round(nav.width()-15) + 'px 30px'});
+     
     }
   }
 
