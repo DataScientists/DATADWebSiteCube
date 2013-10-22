@@ -8,6 +8,8 @@
 	$(document).ready(function() {
 		
 		$("a[rel^='prettyPhoto']").prettyPhoto();
+		$('#header').flowtype();
+		$('#header').flowtype({ minimum : 50, maximum : 400, minFont : 6, maxFont : 28, fontRatio : 10, lineRatio : 1.45 });
 	});
 	
 	
@@ -17,7 +19,7 @@ main_title += "";
 main_title += "The DATAD process is for building agile data-driven solutions that are designed for highly changeable environments.";
 main_title += "<br/>";
 main_title += "<br/>";
-main_title += "<img src=resources/img/BestViewedOnGoogleChrome.png width=120 />";
+
 
 var titles = [
   "What We Do",
@@ -34,7 +36,7 @@ var header_width = 0.65;
 var menu_height = 0.405;
 var menu_width = 0.65;
 
-var tooltext = "&nbsp;Click to Rotate Cube.&nbsp;";
+var tooltext = "&nbsp;Click to Rotate Cube&nbsp;";
 var started =false;
 var star_on = false;
 var star_idx = 1;
@@ -87,7 +89,7 @@ var text = "";
 	text += "    health entrepreneurs by            "
 	text += "    measuring and maintaining the      "
 	text += "    value of their data assets         " 
-	text += "    and evovling data ecosystems.      " 
+	text += "    and evolving data ecosystems.      " 
 	text += "                                       "
 	text += "                                       "
 	text += "                                       "

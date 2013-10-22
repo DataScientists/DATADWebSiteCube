@@ -88,9 +88,9 @@
 }
 
 .tooltip {
-  background: white;
+  background: #2489b0;
   font-family: sans-serif;
-  color: black;
+  color: white;
   font-weight: bold;
   border-radius: 10px;
   text-align: center;

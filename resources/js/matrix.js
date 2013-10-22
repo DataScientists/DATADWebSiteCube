@@ -104,7 +104,7 @@ function matrixGo() {
   clearInterval(anim);
   anim = setInterval(function() {
     dirty = true;
-  },35);
+  },15);
   requestAnimationFrame(refresh);
 }
 

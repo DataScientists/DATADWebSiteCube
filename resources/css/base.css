@@ -90,7 +90,7 @@ body {
 .tooltip {
   z-index: 1;
   position: absolute;
-  display: none;
+  display: none; 
 }
 
 .nav_active .tooltip {

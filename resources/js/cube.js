@@ -320,8 +320,7 @@ $(function() {
 	  $("#nav").show();
       switch(i) {
         case 0:
-          plt.css({'top':'0px','left':'0px','right':'0px','height': Math.round(roof+(10.0)) + 'px'});
-		  
+          plt.css({'top':'0px','left':'0px','right':'0px','height': Math.round(roof+(10.0)) + 'px'});		  
           plt.click(function() {rotate('u')});
           break;
         case 1:
@@ -330,8 +329,7 @@ $(function() {
           break;
         case 2:
           plt.css({'top':'0px','bottom':'0px','left':'0px','width':Math.round(edge+(10.0))+'px'});
-		  console.log('edge:' + edge + ' size:' + size);
-          plt.click(function() {rotate('l')});
+		  plt.click(function() {rotate('l')});
           break;
         case 3:
           plt.css({'top':Math.round((roof+size*2.0)-(10.0))+'px','left':'0px','right':'0px','bottom':'0px'});
@@ -342,22 +340,22 @@ $(function() {
       $('#nav_plates').append(plt);
       switch(i) {
         case 0:
-          tip.css({'top':Math.round(roof-tip.height())+'px','left':Math.round(edge+320-tip.width()/2.0) + 'px'});
+          tip.css({'top':Math.round(roof-tip.height())+'px','left':Math.round(edge+320-tip.width()/2.0) + 'px','width':'186px'});
           tip.attr('id','nav_top');
           break;
         case 1:
-          tip.css({'right':Math.round(edge-(tip.width()/2.0)-(tip.height()/2.0)) + 'px','top':Math.round(roof+320-(tip.height()/2.0)) + 'px'});
+          tip.css({'right':Math.round(edge-(tip.width()/2.0)-(tip.height()/2.0)) + 'px','top':Math.round(roof+320-(tip.height()/2.0)) + 'px','width':'186px'});
           tip.css({'transform':'rotate(90deg)'});
           tip.attr('id','nav_right');
           break;
         case 2:
-          tip.css({'left':Math.round(edge-tip.width()/2.0-tip.height()/2.0) + 'px','top':Math.round(roof+320-tip.height()/2.0) + 'px'});
+          tip.css({'left':Math.round(edge-tip.width()/2.0-tip.height()/2.0) + 'px','top':Math.round(roof+320-tip.height()/2.0) + 'px','width':'186px'});
 		  console.log('edge:' + edge + ' tip width:' + tip.width()+ ' tip height:' + tip.height());
           tip.css({'transform':'rotate(-90deg)'});
           tip.attr('id','nav_left');
           break;
         case 3:
-          tip.css({'bottom':Math.round(roof-tip.height())+'px','left':Math.round(edge+320-tip.width()/2.0)+'px'});
+          tip.css({'bottom':Math.round(roof-tip.height())+'px','left':Math.round(edge+320-tip.width()/2.0)+'px','width':'186px'});
           tip.attr('id','nav_bottom');
           break;
       }

@@ -238,7 +238,9 @@ function prevPicture(){
 		    },5000);
 		  }
 	  star.hole = star.pic;
-	  star_idx -= 1;
+	  if(star_idx!=0){
+		  star_idx -= 1;
+	  }
 	  var img = new Image();
 	  img.src = pics[star_idx % pics.length];
 	  star.pic = img;
@@ -246,17 +248,17 @@ function prevPicture(){
 }
 function resetPauseButton()
 {
-	$("#btnPause").val("Pause");
+	$("#btnPause").val("=");
 }
 function pausePicture(){
 	if(star_on){
 		stop_star();
-		$("#btnPause").val("Play");
+		$("#btnPause").val(">");
 	}
 	else{
 		star_on=true;
 		nextPicture();
-		$("#btnPause").val("Pause");
+		$("#btnPause").val("=");
 	}
 }
 

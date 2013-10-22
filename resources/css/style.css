@@ -204,7 +204,8 @@ input[type="text"], textarea {
   height: 40px;
   width: 240px;
   background: url(../img/nav.png) no-repeat;
-  padding: 5px 0;
+  padding: 5px 1px 1px 1px;
+  margin: 1px 1px 8px 1px;
 }
 
 .nav span {
@@ -227,6 +228,7 @@ input[type="text"], textarea {
   margin: auto;
   border:2px solid #008aaf;
   background: #006796;
+  line-height: 40px;
 
  
 }
@@ -279,9 +281,9 @@ input[type="text"], textarea {
   color: #333;
 }
 .tooltip {
-  background: white;
+  background: #2489b0;
   font-family: 'OpenSansRegular', arial, helvetica, sans-serif;
-  color: black;
+  color: white;
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
@@ -446,3 +448,7 @@ border-radius: 2px;
   display: block;
   margin: 20px 0 0 216px;
  }
+
+  .textSpan.send-button:hover {
+      opacity: 0.8;
+  }
