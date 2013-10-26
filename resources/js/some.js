@@ -17,7 +17,7 @@
 var main_title = "";
 main_title += "";
 main_title += "The DATAD process is for building agile data-driven solutions that are designed for highly changeable environments.";
-main_title += "<div id='menu2d'><a href='/troy/?ie=true' >2D</a>|<a href='/troy/' >3D</a></div>";
+main_title += "<div id='menu2d'><a href='/?ie=true' >2D</a>|<a href='/' >3D</a></div>";
 
 
 
