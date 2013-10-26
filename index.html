@@ -6,31 +6,23 @@
 
 <meta charset='utf-8'>
 
-<script type="application/javascript"
-	src="resources/js/prefixfree.min.js"></script>
-<script type="application/javascript"
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="application/javascript"
-	src="resources/js/prefixfree.jquery.js"></script>
+<script type="application/javascript" src="resources/js/prefixfree.min.js"></script>
+<script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="application/javascript" src="resources/js/prefixfree.jquery.js"></script>
 <script type="application/javascript" src="resources/js/cube.js"></script>
 <script type="application/javascript" src="resources/js/star.js"></script>
 <script type="application/javascript" src="resources/js/matrix.js"></script>
 <script type="application/javascript" src="resources/js/some.js"></script>
-
-
-
-
-			<link rel="stylesheet" href="resources/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
-		<script src="resources/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="resources/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script src="resources/js/flowtype.js" type="text/javascript"></script>
-
-
 <script>
 	function isIE() {
 		var FF = !(window.mozInnerScreenX == null);
 		var myNav = navigator.userAgent.toLowerCase();
-		var ie = (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1])
-				: false;
+		var ie = (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+		if(document.location.search.length) {
+			ie = true;
+		} 
 		return FF || ie;
 	}
 	function isFirefox() {
@@ -45,16 +37,13 @@
 	}
 </script>
 
+<link rel="stylesheet" href="resources/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 <link rel="stylesheet" href="resources/css/style.css" />
 <link rel="stylesheet" href="resources/css/typography.css" />
 
 <!--[if lt IE 9]>
 		<script src="resources/js/html5shiv.js"></script>
 		<![endif]-->
-
-
-
-
 
 <style id="playing">
 </style>
@@ -135,27 +124,28 @@
 					<center>
 						<div class="pageTextRegion">
 							<div class="pageTextRegionTable">
-								<span><a
-									href="https://www.youtube.com/watch?v=GfX-dTKyUjY?rel=0"
-									 target="_media" rel="prettyPhoto"><img src="resources/img/AboutUsTroy.gif"
-										width="100" /></a></span> <span class="textSpan">Troy Sadkowsky
+								<span>
+								<a href="https://www.youtube.com/watch?v=GfX-dTKyUjY?rel=0" target="_media" rel="prettyPhoto">
+								<img src="resources/img/AboutUsTroy.gif" />
+								</a>
+								</span> <span class="textSpan">Troy Sadkowsky
 									is founder of <a href="https://datascientists.net"
 									target="_new">DataScientist.Net</a> and is a data scientist
 									that is passionate about solving important problems.
 									<br><br>
 									
 									<a href="https://www.facebook.com/troy.sadkowsky"
-									 target="_media"><img src="resources/img/SMicons/facebook-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/facebook-16x16.png" /></a>
 									 <a href="http://www.youtube.com/user/troysadkowsky"
-									 target="_media"><img src="resources/img/SMicons/youtube-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/youtube-16x16.png" /></a>
 									 <a href="http://www.linkedin.com/in/troysadkowsky"
-									 target="_media"><img src="resources/img/SMicons/linkedin-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/linkedin-16x16.png" /></a>
 									 <a href="https://plus.google.com/116055394980346281979"
-									 target="_media"><img src="resources/img/SMicons/googleplus-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/googleplus-16x16.png" /></a>
 									 <a href="https://twitter.com/tsadkowsky"
-									 target="_media"><img src="resources/img/SMicons/twitter-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/twitter-16x16.png" /></a>
 									 <a href="http://www.datascientists.net/"
-									 target="_media"><img src="resources/img/SMicons/website-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/website-16x16.png" /></a>
 									 
 								</span>
 							</div>
@@ -171,18 +161,16 @@
 									 <span align="right">
 									 
 									 <a href="http://www.linkedin.com/pub/ray-welburn/15/241/604"
-									 target="_media"><img src="resources/img/SMicons/linkedin-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/linkedin-16x16.png" /></a>
 									 
 									</span>
-									</span> <span><img src="resources/img/AboutUsRay.gif"
-									height="100" /></span>
+									</span> <span><img src="resources/img/AboutUsRay.gif" /></span>
 							</div>
 						</div>
 
 						<div class="pageTextRegion">
 							<div class="pageTextRegionTable">
-								<span><img src="resources/img/AboutUsShane.gif"
-									height="100" /></span> <span class="textSpan">Shane Sadkowsky
+								<span><img src="resources/img/AboutUsShane.gif" /></span> <span class="textSpan">Shane Sadkowsky
 									is an innovative Project Coordinator with specialized skills in
 									Integral Life Practice. His passion is to help people bring
 									their ideas into reality using a holistic approach to health,
@@ -190,17 +178,17 @@
 									<br>
 									
 									<a href="https://www.facebook.com/shane.sadkowsky"
-									 target="_social"><img src="resources/img/SMicons/facebook-16x16.png" width="16" /></a>
+									 target="_social"><img src="resources/img/SMicons/facebook-16x16.png"/></a>
 									 <a href="http://www.youtube.com/channel/UC1TbAXdb4SiptqlwDd543Aw"
-									 target="_social"><img src="resources/img/SMicons/youtube-16x16.png" width="16" /></a>
+									 target="_social"><img src="resources/img/SMicons/youtube-16x16.png" /></a>
 									 <a href="au.linkedin.com/pub/shane-sadkowsky/7b/9a7/545"
-									 target="_social"><img src="resources/img/SMicons/linkedin-16x16.png" width="16" /></a>
+									 target="_social"><img src="resources/img/SMicons/linkedin-16x16.png" /></a>
 									 <a href="https://plus.google.com/113814682888518590223"
-									 target="_social"><img src="resources/img/SMicons/googleplus-16x16.png" width="16" /></a>
+									 target="_social"><img src="resources/img/SMicons/googleplus-16x16.png" /></a>
 									 <a href="https://twitter.com/SSadkowsky"
-									 target="_social"><img src="resources/img/SMicons/twitter-16x16.png" width="16" /></a>
+									 target="_social"><img src="resources/img/SMicons/twitter-16x16.png" /></a>
 									 <a href="www.blogger.com/profile/03066830044871731467"
-									 target="_social"><img src="resources/img/SMicons/website-16x16.png" width="16" /></a>
+									 target="_social"><img src="resources/img/SMicons/website-16x16.png" /></a>
 									</span>
 							</div>
 						</div>
@@ -214,16 +202,16 @@
 									&nbsp;&nbsp;&nbsp;&nbsp;
 									
 									<a href="https://www.facebook.com/splashofchilliDesign"
-									 target="_media"><img src="resources/img/SMicons/facebook-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/facebook-16x16.png" /></a>
 									 
 									 <a href="au.linkedin.com/pub/tom-caffrey/7b/9b2/642"
-									 target="_media"><img src="resources/img/SMicons/linkedin-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/linkedin-16x16.png" /></a>
 									 <a href="https://plus.google.com/u/0/108371188070220909378/"
-									 target="_media"><img src="resources/img/SMicons/googleplus-16x16.png" width="16" /></a>
+									 target="_media"><img src="resources/img/SMicons/googleplus-16x16.png" /></a>
 									
 									 <a href="http://www.splashofchilli.com/"
-									 target="_media"><img src="resources/img/SMicons/website-16x16.png" width="16" /></a>
-									</span> <span><img src="resources/img/AboutUsTom.gif" height="100" /></span>
+									 target="_media"><img src="resources/img/SMicons/website-16x16.png" /></a>
+									</span> <span><img src="resources/img/AboutUsTom.gif"  /></span>
 							</div>
 						</div>
 
@@ -244,7 +232,7 @@
 						<div class="pageTextRegion">
 							<div class="pageTextRegionTable">
 								<span><img src="resources/img/DominiqueGorse.gif"
-									width="90" /></span> <span class="textSpanSmall"> I had the
+									 /></span> <span class="textSpanSmall"> I had the
 									pleasure of working with Troy for six months in 2011. He
 									successfully delivered a key customer project for QFAB. Troy is
 									an authentic "Data Scientist". He engages the customer within
@@ -259,7 +247,7 @@
 						<div class="pageTextRegion">
 							<div class="pageTextRegionTable">
 								<span><img src="resources/img/StephenOBrien.gif"
-									width="90" /></span> <span class="textSpanSmall"> I worked
+									 /></span> <span class="textSpanSmall"> I worked
 									with Troy for several crucial years during the formation of the
 									initial Typefi Publishing System. Troy is quite an
 									extraordinary individual for several reasons: he brings an

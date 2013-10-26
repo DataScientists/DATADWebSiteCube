@@ -251,6 +251,21 @@ input[type="text"], textarea {
   background: #006796;
 }
 
+#menu2d {
+  font-family: 'OpenSansLight', arial, helvetica, sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  padding: 0px;
+  background: #006796;
+  border: 2px solid #008aaf;
+  background: #006796;
+}
+
 #menu a {
   font-family: 'OpenSansLight', arial, helvetica, sans-serif;
   font-weight: normal;
@@ -261,8 +276,21 @@ input[type="text"], textarea {
   text-align: left;
   text-decoration: none;
 }
+#menu2d a {
+  font-family: 'OpenSansLight', arial, helvetica, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
 
 #menu a:visited {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#menu2d a:visited {
   color: white;
   text-decoration: none;
   
@@ -404,6 +432,12 @@ input[type="text"], textarea {
 #img {
   vertical-align: middle;
   display: table-cell;
+}
+img {
+  margin: 0px 0px;
+  background: none;
+  border: 0px;
+  box-shadow: none;
 }
 .h1{
     font-family: 'RobotoThin', 'OpenSansRegular', arial, helvetica, sans-serif;
