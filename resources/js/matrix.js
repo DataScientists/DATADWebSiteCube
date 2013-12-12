@@ -41,7 +41,8 @@ function start() {
   //var pad = new Array((cols.length * (colHeight-1) - text.length)/2+1).join(' ');
   var textp = text;
   console.log('text is: ' + textp);
-  var which = 0;
+  var which = 294;
+  var stopRendering = false;
 
   refresh = function refresh() {
     if (!dirty) {
@@ -58,10 +59,7 @@ function start() {
           color = dark_green;
         }
       }
-      if (which == i)
-        cols[i].unshift([color, textp[i]]);
-      else
-        cols[i].unshift([color, randomLetter()]);
+      cols[i].unshift([color, randomLetter()]);
       cols[i] = cols[i].slice(0,colHeight);
       if ((states[i] && Math.random() < trans) || (!states[i] && Math.random() < trans)) {
         states[i] = !states[i];
@@ -83,21 +81,35 @@ function start() {
 
 
     which++;
+
     for (var i = 0; i < cols.length; i++) {
       for (var j = 0; j < cols[i].length; j++) {
         ctx.save();
           ctx.fillStyle = cols[i][j][0];
           ctx.shadowColor = cols[i][j][0];
+
           if (locked[i][j] && textp[j*cols.length+i] != " ") {
             ctx.fillStyle = light_green;
             ctx.shadowColor = light_green;
             ctx.fillText(textp[j*cols.length+i], size*i, size*(j+1));
           } else {
-            if (text[j * cols.length + i] == ' ')
-              locked[i][j] = true;
-            if (j * cols.length + i == which)
-              locked[i][j] = true;
-            if (cols[i][j][0] != 'black' && !locked[i][j]) ctx.fillText(cols[i][j][1], size*i, size*(j+1));
+            if (textp[j * cols.length + i] != ' ') {
+              if ((j * cols.length + i) * 2 == which && textp[j * cols.length + i] != ' ') {
+                locked[i][j] = true;
+                if (textp[j * cols.length + i] == '.' && textp[j * cols.length + i - 1] == 's')
+                  stopRendering = true;
+              }
+            } else {
+              if (cols[i][j][1] == textp[j*cols.length+i])
+                locked[i][j] = true;
+
+              // if we should stop, then gradually start making them locked
+              if (stopRendering)
+                if (Math.random() < 0.05)
+                  locked[i][j] = true;
+            }
+            if (cols[i][j][0] != 'black' && !locked[i][j])
+              ctx.fillText(cols[i][j][1], size*i, size*(j+1));
           }
         ctx.restore();
       }
