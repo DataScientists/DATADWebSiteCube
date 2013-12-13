@@ -7,8 +7,10 @@ function randomLetter() {
   return chars[Math.floor(Math.random()*chars.length)];
 }
 
-if (typeof requestAnimationFrame == "undefined" && typeof mozRequestAnimationFrame == "undefined") requestAnimationFrame = webkitRequestAnimationFrame;
-if (typeof requestAnimationFrame == "undefined" && typeof webkitRequestAnimationFrame == "undefined") requestAnimationFrame = mozRequestAnimationFrame;
+if (typeof requestAnimationFrame == "undefined" && typeof mozRequestAnimationFrame == "undefined")
+    requestAnimationFrame = webkitRequestAnimationFrame;
+if (typeof requestAnimationFrame == "undefined" && typeof webkitRequestAnimationFrame == "undefined")
+    requestAnimationFrame = mozRequestAnimationFrame;
 
 function start() {
   var dark_green = "rgb(90, 120, 150)";

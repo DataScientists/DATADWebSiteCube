@@ -1,4 +1,3 @@
-DATADWebSiteCube
-================
+Hey guys, my oDesk account got suspended. Please email me at bh@robotgame.org.
 
-DATAD Web Site Cube code
+Thanks, Brandon.
