@@ -11,8 +11,8 @@ if (typeof requestAnimationFrame == "undefined" && typeof mozRequestAnimationFra
 if (typeof requestAnimationFrame == "undefined" && typeof webkitRequestAnimationFrame == "undefined") requestAnimationFrame = mozRequestAnimationFrame;
 
 function start() {
-  var dark_green = "rgba(40,200,80,255)";
-  var light_green = "rgba(0,255,0,255)";
+  var dark_green = "rgb(90, 120, 150)";
+  var light_green = "rgb(180, 220, 255)";
   var size = 14;
   var trans = .1;
 
