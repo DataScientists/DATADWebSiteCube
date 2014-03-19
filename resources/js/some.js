@@ -43,7 +43,13 @@ var star_idx = 1;
 var pics = ["resources/img/DatadSlide1.jpg",
             "resources/img/DatadSlide2.jpg",
             "resources/img/DatadSlide3.jpg",
-            "resources/img/DatadSlide4.jpg",];
+            "resources/img/DatadSlide4.jpg",
+            "resources/img/DatadSlide5.jpg",
+            "resources/img/DatadSlide6.jpg",
+            "resources/img/DatadSlide7.jpg",
+            "resources/img/DatadSlide8.jpg",
+            "resources/img/DatadSlide9.jpg",
+            "resources/img/DatadSlide10.jpg",];
 function start_star() {
 	resetPauseButton();
 	started=true;
