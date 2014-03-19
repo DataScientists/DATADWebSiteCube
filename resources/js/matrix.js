@@ -22,7 +22,7 @@ function start() {
   var h = $('#cnv').attr('height');
   var ctx = $('#cnv')[0].getContext('2d');
 
-  ctx.font = "normal " + size + "pt monospace";
+  ctx.font = "bolder "+size+"px Arial";
   var colHeight = Math.round(h/size)+1;
   ctx.shadowOffsetX = 0;
   ctx.shadowOffsetY = 0;
@@ -93,7 +93,7 @@ function start() {
           if (locked[i][j] && textp[j*cols.length+i] != " ") {
             ctx.fillStyle = light_green;
             ctx.shadowColor = light_green;
-            ctx.fillText(textp[j*cols.length+i], size*i, size*(j+1));
+            ctx.fillText(textp[j*cols.length+i], size*i, (size+4)*(j+1));
           } else {
             if (textp[j * cols.length + i] != ' ') {
               if ((j * cols.length + i) * 2 == which && textp[j * cols.length + i] != ' ') {
@@ -111,7 +111,7 @@ function start() {
                   locked[i][j] = true;
             }
             if (cols[i][j][0] != 'black' && !locked[i][j])
-              ctx.fillText(cols[i][j][1], size*i, size*(j+1));
+              ctx.fillText(cols[i][j][1], size*i, (size+4)*(j+1));
           }
         ctx.restore();
       }
